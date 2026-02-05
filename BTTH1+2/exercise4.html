@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercise4</title>
+  </head>
+  <body>
+    <form>
+      <h3>Basic Info</h3>
+      <hr />
+      <table>
+        <tr>
+          <td>
+            <b>Employee ID</b>
+          </td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Lname"><b>Last Name</b></label>
+          </td>
+          <td>Dodsworth</td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Fname"><b>First Name</b></label>
+          </td>
+          <td><input type="text" id="Fname" name="Fname" value="Anne" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender"><b>Gender</b></label>
+          </td>
+          <td>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label> <br />
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label><br />
+            <input type="radio" id="XXX" name="gender" value="XXX" />
+            <label for="XXX">XXX</label><br />
+            <input type="radio" id="ZZZ" name="gender" value="ZZZ" checked />
+            <label for="ZZZ">ZZZ</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="title"><b>Title</b></label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              value="Sales Representative"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Suffix"><b>Suffix</b></label>
+          </td>
+          <td><input type="text" id="Suffix" name="Suffix" value="Ms." /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="BirthDate"><b>BirthDate</b></label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="BirthDate"
+              name="BirthDate"
+              value="1969-07-02 00:00:00"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="HireDate"><b>HireDate</b></label>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="HireDate"
+              name="HireDate"
+              value="1994-11-15 00:00:00"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="SSN"><b>SSN # (if applicale)</b></label>
+          </td>
+          <td><input type="text" id="SSN" name="SSN" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="reportsto"><b>Reports To</b></label>
+          </td>
+          <td>
+            <select name="reportsto" id="reportsto">
+              <option value="Buchanan">Buchanan</option>
+              <option value="Jollibee">Jollibee</option>
+              <option value="McDonald's">Mcdonald's</option>
+              <option value="KFC">KFC</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <h3>Contact Info</h3>
+      <hr />
+      <table>
+        <tr>
+          <td><b>Email</b></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="name@gmail.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><b>Address</b></td>
+          <td>
+            <input type="text" name="add" id="add" value="7 Houndstooth Rd" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>City</b></td>
+          <td><input type="text" name="city" id="city" value="London" /></td>
+        </tr>
+        <tr>
+          <td><b>Region</b></td>
+          <td><input type="text" name="region" id="region" /></td>
+        </tr>
+        <tr>
+          <td><b>Postal Code </b></td>
+          <td>
+            <input
+              type="text"
+              name="PostalCode"
+              id="PostalCode"
+              value="WG27LT"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><b>Country</b></td>
+          <td>
+            <select name="Country" id="Country">
+              <option value="United States">United States</option>
+              <option selected value="Russian Federation">
+                Russian Federation
+              </option>
+              <option value="Viet Nam">Viet Nam</option>
+              <option value="Korea">Korea</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><b>US Home Phone</b></td>
+          <td>
+            <input type="tel" name="phone" id="phone" value="(234)234-2342" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>Photo</b></td>
+          <td>
+            <input type="text" name="Photo" id="Photo" value="EmpID9.bmp" />
+          </td>
+        </tr>
+      </table>
+      <h3>Optional Info</h3>
+      <hr />
+      <table>
+        <tr>
+          <td><b>Notes</b></td>
+          <td>
+            <textarea row="10" cols="60">
+Anne has a BA degree in English from St.Lawrence College. She is fluent in French and German.ZZZ
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Preferred Shift</b></td>
+          <td>
+            <input type="checkbox" name="Regular" id="Regular" />
+            <label for="Regular">Regular</label><br />
+            <input type="checkbox" name="GravyYard" id="GravyYard" checked />
+            <label for="GravyYard">Gravy Yard</label><br />
+          </td>
+        </tr>
+        <tr>
+          <td><b>Active?</b></td>
+          <td><input type="checkbox" checked /></td>
+        </tr>
+        <tr>
+          <td rowspan="2"><b>Are you human?</b></td>
+          <td class="text-center">Click to change</td>
+        </tr>
+        <tr>
+          <td><input type="text" /></td>
+        </tr>
+        <hr />
+        <tr>
+          <td>
+            <input type="button" value="Submit" />
+            <input type="button" value="Cancel" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
