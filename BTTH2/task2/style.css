@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.destination img {
+  width: 400px;
+  height: 150px;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(128, 128, 128, 0.476);
+}
+#destinations {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.destination p {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  color: darkgrey;
+}
+.destination p strong {
+  color:limegreen;
+}
+#highlights h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgba(0, 0, 0, 0.678);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer ul {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+  padding: 10px;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+}
+#highlights {
+  background-color: rgb(202, 255, 255);
+  padding: 20px;
+  margin-top: 0;
+}
+#page-logo {
+  font-size: 1.2rem;
+  font-family:
+    Oleo Script,
+    cursive;
+  padding: 5px;
+}
+#page-logo a {
+  color: khaki;
+  text-decoration: none;
+}
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  color: khaki;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: url("assets/cities-page-2/ocean.jpg");
+  background-size: cover;
+}
+#hero {
+  background-image: url("assets/cities-page-2/ocean.jpg");
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-content {
+  text-align: center;
+  border: 0px solid rgba(0, 0, 0, 0.452);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.445);
+  border-radius: 4px;
+  padding: 30px 100px;
+  background-color: rgba(0, 0, 0, 0.418);
+}
+#hero-content h1 {
+  font-family: Raleway, cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+#hero-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.637);
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#hero-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: Quicksand, sans-serif;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    background-color: yellow;
+    border-radius: 3px;
+    margin-top: 10px;
+}

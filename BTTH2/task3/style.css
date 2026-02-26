@@ -1,0 +1,56 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(220, 220, 220, 0.205);
+}
+.container-text {
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  border: 2px solid rgba(0, 191, 255, 0.757);
+  box-shadow: 0 5px 0 rgba(0, 191, 255, 0.757);
+}
+h1 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.788);
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.para {
+  display: flex;
+  gap: 60px;
+  /* align-items: flex-start; */
+}
+.para1 {
+  margin-left: 40px;
+  padding: 40px;
+  box-shadow: 0 2px 20px rgba(128, 128, 128, 0.281);
+  background-color: white;
+}
+.para1 h4{
+    font-size: 1rem;
+    margin-bottom: 18px;
+    color: rgba(0, 0, 0, 0.675);
+}
+.text{
+    font-size:0.78rem;
+    color:gray;
+    margin-bottom: 18px;
+}
+.author{
+    color: rgba(0, 0, 0, 0.675) ;
+    margin-bottom: 10px;
+}
+.signature{
+    font-size: 0.7rem;
+    color: rgb(30, 101, 255);
+}
+.para2{
+    font-size: 0.78rem;
+    color:rgba(0, 0, 0, 0.74);
+    margin-right: 40px;
+}
