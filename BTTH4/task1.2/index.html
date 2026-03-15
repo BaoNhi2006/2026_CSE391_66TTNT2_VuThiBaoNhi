@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bai 1.2 - Bang diem sinh vien (nang cao)</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h2>Bảng điểm của sinh viên (nâng cao)</h2>
+      <div class="form-section">
+        <div class="form-group">
+          <label for="inputStudentName">Ho ten: </label>
+          <input type="text" id="inputStudentName" />
+        </div>
+        <div class="form-group">
+          <label for="inputStudentScore">Diem:</label>
+          <input type="number" id="inputStudentScore" />
+        </div>
+        <button class="btnAdd" id="btnAddStudent">+ Them sinh vien</button>
+      </div>
+      <div class="form-search">
+        <input
+          type="text"
+          id="inputSearch"
+          placeholder="Tìm kiếm sinh viên..."
+        />
+       
+        <p id="noResult" style="color: red" ; display="none">
+          Không có kết quả!
+        </p>
+        <select name="" id="selectRank">
+          <option value="default">-- Xếp loại --</option>
+          <option value="Gioi">Gioi</option>
+          <option value="Kha">Kha</option>
+          <option value="Trung binh">Trung binh</option>
+          <option value="Yeu">Yeu</option>
+        </select>
+        <button class="btnSearch" id="search-btn">Tìm kiếm</button>
+      </div>
+      <table class="data-table" id="studentTable">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Ho ten</th>
+            <th id="scoreSort">Diem</th>
+            <th>Xep loai</th>
+            <th>Thao tac</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+      </table>
+      <div id="summary">
+        Tong so sinh vien la: 0 | Diem trung binh cua sinh vien la: 0
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

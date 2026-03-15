@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h2>Đăng kí tài khoản</h2>
+      <form action="" id="registerForm">
+        <div class="form-group">
+          <label for="fullname">Họ và tên:</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Nguyen Van A"
+          />
+          <span class="error-msg" id="error-fullname"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+          />
+          <span class="error-msg" id="error-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="phone">Số điện thoại:</label>
+          <input type="text" name="phone" id="phone" placeholder="0123456789" />
+          <span class="error-msg" id="error-phone"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Mật khẩu:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Nhập tối thiểu 8 kí tự!"
+          />
+          <span class="error-msg" id="error-password"></span>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Xác nhận mật khẩu:</label>
+          <input
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="Nhập lại mật khẩu"
+          />
+          <span class="error-msg" id="error-confirmPassword"></span>
+        </div>
+        <div class="form-group">
+            <label>Giới tính:</label>
+            <div class="radio-group">
+                 <label class="radio-label">
+                    <input type="radio" name="gender" value="nam">Nam
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="nữ">Nữ
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="khác">Khác
+                </label>
+            </div>
+            <span class="error-msg" id="error-gender"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="checkbox-label">
+                <input type="checkbox" name="terms" id="terms">
+                Tôi đồng ý với <a href="#">điều khoản sử dụng</a> 
+            </label>
+            <span class="error-msg" id="error-terms"></span>
+        </div>
+        <button type="submit" class="btnSubmit">Đăng ký</button>
+      </form>
+      <div id="successMessage" style="display: none;"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

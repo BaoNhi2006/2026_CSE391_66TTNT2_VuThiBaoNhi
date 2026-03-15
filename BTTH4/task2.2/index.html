@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h2>Đặt hàng trực tuyến</h2>
+      <form action="" id="orderForm">
+        <div class="form-group">
+          <label for="product">Tên sản phẩm:</label>
+          <select name="product" id="product">
+            <option value="">-- Chọn sản phẩm</option>
+            <option value="Ao">Áo - 150.000đ</option>
+            <option value="Quan">Quần - 90.000đ</option>
+            <option value="Giay">Giày - 300.000đ</option>
+          </select>
+          <span class="error-msg" id="error-product"></span>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Số lượng:</label>
+          <input
+            type="number"
+            id="quantity"
+            placeholder="Nhập vào số lượng từ 1 đến 99"
+          />
+          <span class="error-msg" id="error-quantity"></span>
+        </div>
+        <div class="form-group" id="totalGroup" style="display: none">
+          <label>Tổng tiền</label>
+          <div id="totalPrice" class="total-price">0 đ</div>
+        </div>
+        <div class="form-group">
+          <label for="deliveryDate">Ngày giao hàng:</label>
+          <input type="date" id="deliveryDate" name="deliveryDate" />
+          <span class="error-msg" id="error-deliveryDate"></span>
+        </div>
+        <div class="form-group">
+          <label for="address">Địa chỉ giao</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Nhập ít nhất 10 ký tự"
+          />
+          <span class="error-msg" id="error-address"></span>
+        </div>
+        <div class="form-group">
+          <label for="note">Ghi chú</label>
+          <textarea
+            id="note"
+            name="note"
+            placeholder="Không bắt buộc, tối đa 200 ký tự"
+          ></textarea>
+          <span id="noteCount" class="note-count">0/200</span>
+          <span class="error-msg" id="error-note"></span>
+        </div>
+        <div class="form-group">
+          <label for="">Phương thức thanh toán: </label>
+          <div class="radio-group">
+            <label for="" class="radio-label">
+              <input type="radio" name="payment" value="COD" /> COD
+            </label>
+            <label for="" class="radio-label">
+              <input type="radio" name="payment" value="chuyenKhoan" /> Chuyển
+              khoản
+            </label>
+            <label for="" class="radio-label">
+              <input type="radio" name="payment" value="viDienTu" /> Ví điện tử
+            </label>
+          </div>
+          <span class="error-msg" id="error-payment"></span>
+        </div>
+        <button type="submit" class="btnSubmit">Đặt hàng</button>
+      </form>
+      <div id="successMessage" style="display: none"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

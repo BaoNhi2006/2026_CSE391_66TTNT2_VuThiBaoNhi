@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: #f0f4ff;
+  background-image:
+    radial-gradient(circle at 20% 20%, #bde0fb 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, #c7e8ff 0%, transparent 50%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 16px;
+}
+
+.page-container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 4px 24px rgba(21, 101, 192, 0.1);
+  border: 1px solid #e3f2fd;
+}
+
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1565c0;
+  margin-bottom: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1565c0;
+  margin-bottom: 16px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1565c0;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  padding: 10px 14px;
+  border: 2px solid #bbdefb;
+  border-radius: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: #1a2b4a;
+  background: #f8fbff;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #42a5f5;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
+.note-count {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+}
+
+
+.total-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1565c0;
+  padding: 10px 14px;
+  background: #e3f2fd;
+  border-radius: 10px;
+  border: 2px solid #bbdefb;
+}
+
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a2b4a;
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+
+.error-msg {
+  font-size: 12px;
+  color: red;
+  min-height: 16px;
+}
+
+
+.btnSubmit {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #42a5f5, #1565c0);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+}
+
+.btnSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(21, 101, 192, 0.4);
+}
+
+
+#confirmBox {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 24px rgba(21, 101, 192, 0.1);
+  border: 1px solid #e3f2fd;
+}
+
+#orderSummary p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.6;
+  padding: 8px 12px;
+  background: #f8fbff;
+  border-radius: 8px;
+  border-left: 3px solid #42a5f5;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btnConfirm {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(135deg, #42a5f5, #1565c0);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+}
+
+.btnConfirm:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(21, 101, 192, 0.4);
+}
+
+.btnCancel {
+  flex: 1;
+  padding: 12px;
+  background: #fff;
+  color: #e53935;
+  border: 2px solid #ffcdd2;
+  border-radius: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btnCancel:hover {
+  background: #ffebee;
+  transform: translateY(-1px);
+}
+
+/* ── THÀNH CÔNG ── */
+#successMessage {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1565c0;
+  padding: 28px;
+  background: #e3f2fd;
+  border-radius: 12px;
+  line-height: 1.8;
+  border: 1px solid #bbdefb;
+}
