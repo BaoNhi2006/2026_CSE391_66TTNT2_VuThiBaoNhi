@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.form-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.progress-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ccc;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.progress-step span {
+  font-size: 12px;
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+.progress-step.active .progress-circle {
+  border-color: #4a90e2;
+  color: #4a90e2;
+}
+
+.progress-step.active span {
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.progress-step.done .progress-circle {
+  border-color: #27ae60;
+  background: #27ae60;
+  color: #fff;
+}
+
+.progress-step.done span {
+  color: #27ae60;
+}
+
+.progress-line {
+  width: 60px;
+  height: 2px;
+  background: #ccc;
+  margin-bottom: 20px;
+}
+
+.progress-line.done {
+  background: #27ae60;
+}
+
+h2 {
+  font-size: 22px;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #4a90e2;
+}
+
+.error-msg {
+  display: block;
+  font-size: 12px;
+  color: red;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+#counter {
+  float: right;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  padding-top: 4px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pw-wrap {
+  position: relative;
+}
+
+.pw-wrap input {
+  padding-right: 44px;
+}
+
+#toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.btn-next {
+  padding: 10px 24px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-next:hover {
+  background: #357abd;
+}
+
+.btn-back {
+  padding: 10px 24px;
+  background: #fff;
+  color: #555;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-back:hover {
+  background: #f5f5f5;
+}
+
+.summary {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.summary-row {
+  display: flex;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-label {
+  color: #888;
+  flex: 0 0 160px;
+}
+
+.summary-value {
+  color: #222;
+  font-weight: bold;
+}
+
+#successMessage {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1565c0;
+  padding: 80px;
+  background-color: aliceblue;
+  border-radius: 12px;
+  line-height: 1.8;
+  box-shadow: 4px 4px 8px #555555a7;
+  margin: 20px 0;
+}
